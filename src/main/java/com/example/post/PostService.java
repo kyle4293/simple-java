@@ -50,7 +50,6 @@ public class PostService {
         postRepository.delete(post);
     }
 
-    @Transactional
     private Post findPost(Long id) {
         return postRepository.findById(id).orElseThrow(() ->
                 new IllegalArgumentException("Post not found")

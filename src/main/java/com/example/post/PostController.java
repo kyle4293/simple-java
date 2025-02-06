@@ -21,7 +21,7 @@ public class PostController {
 
     @GetMapping
     public List<PostResponseDto> getPosts() {
-        ;return postService.getPosts();
+        return postService.getPosts();
     }
 
     @GetMapping("/{id}")
